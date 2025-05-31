@@ -9,12 +9,21 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<style>
-		*{
+		* {
 			box-sizing: border-box;
 		}
+
 		:root {
 			--bg_red: #db261b;
 			--bg_blue: #021037;
+		}
+
+		.bg__red {
+			background-color: #db261b;
+		}
+
+		.text_red {
+			color: #db261b
 		}
 
 		.lsn {
@@ -23,10 +32,6 @@
 
 		.tdn {
 			text-decoration: none;
-		}
-
-		.header1 {
-			background-color: var(--bg_red);
 		}
 
 		.header2>.header2logo {
@@ -66,17 +71,49 @@
 			letter-spacing: 1.2;
 			word-spacing: 1.2;
 		}
-		.section3>div:nth-child(1)>h1{
-			font-size:32px;
-			color:#021037
-			
+
+		.section3>div:nth-child(1)>h1 {
+			font-size: 32px;
+			color: #021037;
+		}
+
+		.section3>div:nth-child(2)>h2 {
+			background-color: var(--bg_blue);
+			color: white;
+		}
+
+		.bg_red {
+			background-color: var(--bg_red);
+			font-size: 20px;
+		}
+
+		.section4 {
+			background-image: url("S-B imges/moto2.jpg");
+			background-attachment: fixed;
+		}
+
+		.sec4_p {
+			font-size: 20px;
+		}
+
+		.section5 {
+			background-image: url("S-B imges/directorback.jpg");
+			background-attachment: fixed;
+		}
+
+		.sec5_p {
+			font-size: 15px;
+			line-height: 1.91;
+		}
+		.min_height{
+			min-height: 170px;
 		}
 	</style>
 </head>
 
 <body>
-	<header>
-		<ul class="row lsn header1 p-3 ">
+	<header class="container-fluid p-0">
+		<ul class="row lsn bg__red py-3 ">
 			<li class="col-sm-4 ps-5 "><a href="#" class="tdn text-white"><i class="fa-solid fa-location-dot"></i>
 					Dadri-Mahendergarh Road Pali, Mahendergarh</a></li>
 			<li class="col-sm-2 ps-2"><a href="#" class="tdn  text-white"><i
@@ -96,20 +133,23 @@
 				<li class="col-2 lsn"></li>
 			</ul>
 		</ul>
-		<div class="header2 row container mx-auto ">
-			<img class="col-sm-4 header2logo  mx-auto d-block" src="S-B imges/sanskar_bharti_logo.jpg" alt="logo" />
-			<div class="col-sm-4 text-center my-auto">
+		<div class=" container-fluid ">
+		<div class="header2 row   ">
+			<img class="col-4 header2logo  mx-auto d-block" src="S-B imges/sanskar_bharti_logo.jpg" alt="logo" />
+			<div class="col-4 text-center my-auto">
 				<h1>Sanskar Bharti</h1>
 				<br>
 				<h3 class="text-muted">Degree College</h3>
 			</div>
-			<img class="col-sm-4 header2logo  mx-auto d-block" src="S-B imges/sanskar_bharti_logo.jpg" alt="logo" />
+			<img class="col-4 header2logo  mx-auto d-block" src="S-B imges/sanskar_bharti_logo.jpg" alt="logo" />
 		</div>
-		<nav>
-			<ul class="container nav justify-content-center">
+		</div>
+		<nav class="container-fluid">
+			<ul class="nav justify-content-center p-0">
 				<li
 					class="nav-item  list-style-none p-3 px-5 text-center border border-2 border-bottom-0  border-top-0">
-					<a class="text-decoration-none text-white" href="Sanskar-Bharti Home Page.html">HOME</a></li>
+					<a class="text-decoration-none text-white" href="Sanskar-Bharti Home Page.html">HOME</a>
+				</li>
 
 				<li
 					class="nav-item  list-style-none p-3 px-5 text-center border border-bottom-0 border-start-0  border-top-0">
@@ -170,77 +210,211 @@
 
 				<li
 					class="nav-item  list-style-none p-3 px-4 text-center border border-end-0 border-bottom-0  border-top-0">
-					<a class="text-decoration-none text-white " href="">GALLERY</a></li>
+					<a class="text-decoration-none text-white " href="">GALLERY</a>
+				</li>
 
 				<li
 					class="nav-item  list-style-none p-3 px-4 text-center border border-2 border-bottom-0  border-top-0">
-					<a class="text-decoration-none text-white" href="">CONTACT US</a></li>
+					<a class="text-decoration-none text-white" href="">CONTACT US</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<section class="section1 ">
+	<section class="section1 container-fluid p-0 ">
 		<div>
-			<img src="S-B imges/head_image.png" alt="image">
+			<img src="S-B imges/head_image.png" alt="image" class="img-fluid">
 		</div>
 	</section>
-	<section class="section2">
+	<section class="section2 container-fluid p-0 ">
 		<div class="paragraph px-3 p-2">
 			<p>इंदिरा गांधी यूनिवर्सिटी की परीक्षा 27.04.2024 से शुरू हो रही है। जिसमे B.A, B.COM, B.SC (MED &NM) ,M.A,
 				M.SC और M.COM - 2nd, 4th ओर 6th सेमेस्टर की परीक्षा होगी। इन सभी की डेटशीट नीचे दिए गए लिंक से चेक कर
 				सकते हो</p>
 		</div>
-		<div class="row">
-			<p class="col-lg-3 text-center py-3 ">Admission Open
+		<div class="row ">
+			<p class="col-sm-3 text-center p-4 m-0">Admission Open
 				<br>for 2024-2025
 			</p>
-			<p  class="col-lg-3 text-center py-3 border border-top-0 border-bottom-0 border-end-0">
+			<p class="col-lg-3 text-center p-4 border border-top-0 border-bottom-0 border-end-0 m-0">
 				UG : BA, BCOM,BSc(Medical)
 				<br>BSc(Non-Medical)
 			</p>
-			<p  class="col-lg-3 text-center py-3 border border-top-0 border-bottom-0">
+			<p class="col-sm-3 text-center p-4 border border-top-0 border-bottom-0 m-0">
 				PG : M.A., M.Com, M.Sc.
-                <br>Professional : B.Ed.
+				<br>Professional : B.Ed.
 			</p>
-			<p  class="col-lg-3 text-center py-5">Admission Helpline.
-             <br>8607575748
+			<p class="col-sm-3 text-center p-4 m-0">Admission Helpline.
+				<br>8607575748
 			</p>
 		</div>
 	</section>
-	<section>
-				<div class="section3 row">
-					<div class="col-8 p-5">
-						<h1 class="py-3" >Welcome to Sanskar Bharti Degree College Mahendergarh,
-                        Haryana</h1>
-						<p class="py-3">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called as the best degree colleges of haryana.
-						With the mission to propogate quility of education by honing the technical skills of students. 
-						Sanskar Bharti aims to produce superior manpower of a tall order to be compared with the world's most professional intellectuals.
-						</p>
-						<p class="py-3"><b>College toppers:</b> The college toppers have been the pride of Sanskar Bharti
-						with their respectful place in the top charts as IGU Haryana toppers.</p>
-						<p class="py-2"><b>Placements for students: </b>Rapid metro, Adecco, CEPTA, EYUG, Mahindra are the few esteemed organization and<b> placement partners</b>
-						absorbing the produce of Sanskar Bharti as it is one of the top degree college in Haryana.
-						</p>
-						<p class="py-2"><b>College News & Events:</b> Various seminars, workshops and guest lectures are regularly conducted to extract the intellectual brain storming in the
-						students and these events are regularly mentioned in the<b> notification</b> to the students.</p>
-					</div>
-					<div class="col-4 py-5 ">
-						<h1>News & Events</h1>
-						<div>
-							<p>news1</p>
-							<p>news2</p>
-							<p>news3</p>
-							<p>news4</p>
-							<p>news5</p>
-							<p>news4</p>
-						</div>
-						<div>
-						    <div>
-							     <input type="button" class="button " value="Click for more news..." >
-							</div>
-						</div>
+	<section class="container-fluid">
+		<div class="section3 row ">
+			<div class="col-sm-8 p-5">
+				<h1 class="py-3">Welcome to Sanskar Bharti Degree College Mahendergarh,
+					Haryana</h1>
+				<p class="py-3">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called
+					as the best degree colleges of haryana.
+					With the mission to propogate quility of education by honing the technical skills of students.
+					Sanskar Bharti aims to produce superior manpower of a tall order to be compared with the world's
+					most professional intellectuals.
+				</p>
+				<p class="py-3"><b>College toppers:</b> The college toppers have been the pride of Sanskar Bharti
+					with their respectful place in the top charts as IGU Haryana toppers.</p>
+				<p class="py-2"><b>Placements for students: </b>Rapid metro, Adecco, CEPTA, EYUG, Mahindra are the few
+					esteemed organization and<b> placement partners</b>
+					absorbing the produce of Sanskar Bharti as it is one of the top degree college in Haryana.
+				</p>
+				<p class="py-2"><b>College News & Events:</b> Various seminars, workshops and guest lectures are
+					regularly conducted to extract the intellectual brain storming in the
+					students and these events are regularly mentioned in the<b> notification</b> to the students.</p>
+				<div>
+					<input type="button" class="btn border rounded-pill bg__red text-white px-5" value="Read More" />
+				</div>
+			</div>
+			<div class="col-sm-4 my-5  border border-muted">
+				<h2 class="p-2 w-100">News & Events</h2>
+				<marquee direction="up">
+					<p class="ps-3 py-3 border">news1</p>
+					<p class="ps-3 py-3 border">news2</p>
+					<p class="ps-3 py-3 border">news3</p>
+					<p class="ps-3 py-3 border">news4</p>
+					<p class="ps-3 py-3 border">news5</p>
+					<p class="ps-3 py-3 border">news4</p>
+				</marquee>
+				<div>
+					<div class="py-2">
+						<input type="button" class="btn border w-100 p-2 bg_red text-white"
+							value="Click for more news...">
 					</div>
 				</div>
-			</section>
+			</div>
+		</div>
+	</section>
+	<section class="section4 text-center container-fluid">
+		<p>
+		<h1 class="p-4 text-white">Thought of the Day</h1>
+		</p>
+		<p class="text-white section3 pb-5 sec4_p">
+			<i class="fa-solid fa-quote-left pe-3 align-top"></i>
+			A Building With Four Walls And Tomorrow Inside.
+			<i class="fa-solid fa-quote-right ps-3 align-top"></i>
+		</p>
+	</section>
+	<section class="container-fluid">
+	<section class="section5 row">
+		<div class="col-sm-4 m-4 p-3 border border-secondary ">
+
+			<h2 class="text_red p-3">DIRECTOR'S MESSAGE</h2>
+			<img src="S-B imges/director2.png" alt="image" class="mx-auto d-block w-100" />
+			<p class="sec5_p p-3">It is my pleasant pleasure and privilege to express my heartiest greeting on the
+				auspicious opening
+				of Sanskar Bharti Degree College for women at Pali (M.Garh), in the heart of Central University of
+				Haryana
+				Jant - Pali. Education is the basis of progress & development & education of girls is the bench mark of
+				women empowerment,
+				enlightenment and betterment of society.
+				I wish in the long run this institutions will take this so called backward area to the pinnacle of glory
+				and zenith of heights.
+				Keeping the present environment of co-educational institutions and hostels...
+				<input type="button" class="btn bg__red text-white rounded-pill" value=" Read More " />
+			</p>
+
+
+		</div>
+
+		<div class="col-sm-7 p-3">
+
+			<h2 class="text_red py-5 text-center">Courses Offered</h2>
+
+			<div class="row gx-3 ">
+				<div class="col-6 ">
+					<div class=" border border-secondary rounded-4 min_height ">
+					<h2 class="p-3">
+						<i class="fa-solid fa-user-doctor fa-section5icon text_red px-2"></i>B.Sc Medical
+					</h2>
+					<p class="ps-5">B.Sc Medical is usually for Programs that are more focused on Scienticfic and
+						Mathematical
+						sujects.</p>
+				</div>
+				</div>
+
+
+
+				<div class="col-6   ">
+					<div class=" border border-secondary rounded-4 min_height">
+					<h2 class="p-3">
+						<i class="fa-solid fa-bong fa-section5icon text_red px-2"></i>B.Sc Non-Medical
+					</h2>
+					<p class="ps-5">B.Sc Non-Medical established theories and possess quantitative reasoning and problem
+						solving
+						skills.</p>
+				</div>
+				</div>
+			
+			
+				<div class="col-6 ">
+					<div class=" border border-secondary rounded-4 min_height ">
+					<h2 class="p-3">
+						<i class="fa-solid fa-pencil fa-section5icon text_red px-2"></i>B.Sc Honors
+					</h2>
+					<p class="ps-5">B.Sc Honors is great employement opportunities in the field of researh developement
+						sector.</p>
+				</div>
+</div>
+
+				<div class="col-6 ">
+					<div class=" border border-secondary rounded-4 min_height">
+					<h2 class="p-3">
+						<i class="fa-solid fa-file fa-section5icon text_red px-2"></i>B.A
+					</h2>
+					<p class="ps-5">B.A is usually for Programs that are more focused on Scienticfic and Mathematical
+						sujects.</p>
+				</div>
+</div>
+			
+			
+				<div class="col-6 ">
+					<div class=" border border-secondary rounded-4 min_height ">
+					<h2 class="p-3">
+						<i class="fa-solid fa-calculator fa-section5icon text_red px-2"></i>B.Com
+					</h2>
+					<p class="ps-5">B.Com Students are exposed to general Business Principles like Finance and
+						Marketing.</p>
+				</div>
+</div>
+
+				<div class="col-6 ">
+					<div class=" border border-secondary rounded-4 min_height">
+					<h2 class="p-3">
+						<i class="fa-solid fa-minus fa-section5icon text_red px-2"></i>M.Sc
+					</h2>
+					<p class="ps-5">M.Sc is usually for Programs that are more focused on Scienticfic and Mathematical
+						sujects.</p>
+				</div>
+</div>
+			</div>
+
+		</div>
+
+		</div>
+	</section>
+	</section>
+	<section class="secton6 container-fluid">
+		<div class="">
+			<h1 class="text-center p-5">Sanskar Bharti Group of Institutions</h1>
+			<div class="section6imgs container mx-auto row">
+			
+				<div class="col-sm-4"><img class="img-fluid p-5" src="S-B imges/convent.png" /></div>
+
+				<div class="col-sm-4"><img class="img-fluid p-5" src="S-B imges/convent.png" /></div>
+
+				<div class="col-sm-4"><img class="img-fluid p-5" src="S-B imges/convent.png" /></div>
+				
+
+			</div>
+		</div>
+	</section>
 </body>
 
 </html>
