@@ -121,6 +121,17 @@
 		.sec7colheight{
 			min-height:450px;
 		}
+		.section8{
+			background-image:url("S-B imges/form1.jpg");
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size:100%;
+			background-position:center;
+		}
+		.section8 form div label{
+			font-weight: 500;
+			padding-bottom:3px;
+		}
 	</style>
 </head>
 
@@ -499,5 +510,35 @@
 			</div>
 		</div>
 	</section>
+	<section class="section8">
+			
+				<div class="container-fluid" >
+					<h1 class="text-center text_blue p-3">  Get in Touch </h1>
+					<form class="row g-5 m-3">
+						<div class="col-sm-6 my-3">
+							 <label for="name" class="" >NAME: </label>
+							 <input type="text" id="name" placeholder=" Enter your name " class="w-100 p-2" autocomplete="name"/>
+						</div>
+
+						<div class="col-sm-6 my-3">						
+							 <label for="number"  >Phone no: </label>
+							 <input type="tel" id="naumber" placeholder=" +91 " class="w-100 p-2" />
+						</div>
+						
+						<div class="col-sm-6 my-3">
+							 <label for="mail" >Email id: </label>
+							 <input type="email" id="mail" placeholder=" Enter your Email id " autocomplete="email" class="w-100 p-2" />
+						</div>
+						
+						<div class="col-sm-6 my-3">
+							 <label for="sub" >Subject: </label>
+							 <input type="text" id="sub" placeholder=" Enter your Subject "  class="w-100 p-2"/>
+						</div>
+						<div class="m-3 mb-5 ">
+						<input type="submit" value=" Submit " class="btn border border-dark bg__red text-white px-5 rounded-pill py-2 "/>
+						</div>
+					</form>
+				</div>
+			</section>
 </body>
 </html>
