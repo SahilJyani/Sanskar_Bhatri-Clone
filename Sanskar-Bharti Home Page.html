@@ -48,7 +48,7 @@
 
 		
 
-		nav>div>ul>li>.bg_dark {
+		nav>div>div>ul>li>.bg_dark {
 			background-color: #343a40;
 
 		}
@@ -73,12 +73,12 @@
 			word-spacing: 1.2;
 		}
 
-		.section3>div:nth-child(1)>h1 {
+		.section3>div:nth-child(1)>div>h1 {
 			font-size: 32px;
 			color: #021037;
 		}
 
-		.section3>div:nth-child(2)>h2 {
+		.section3>div:nth-child(2)>div>h2 {
 			background-color: var(--bg_blue);
 			color: white;
 		}
@@ -137,11 +137,14 @@
 			font-size:15px;
 			line-height:1.9;
 		}
+		.bg_redbtn:hover{
+			background-color:var(--bg_red);
+		}
 	</style>
 </head>
 
 <body>
-	<header class="container-fluid-sm">
+	<header class="container-sm-fluid- p-0">
 		<ul class="row m-0 bg__red py-3 px-0">
 			<li class="col-sm-4 ps-sm-5 ps-2 lsn"><a href="#" class="tdn text-white"><i class="fa-solid fa-location-dot"></i>
 					Dadri-Mahendergarh Road Pali, Mahendergarh</a></li>
@@ -164,85 +167,86 @@
 				</ul>
 			</li>
 		</ul>
-		<div class="container">
+		<div class="container-md">
 			<div class=" row ">
-				<img class="col-sm-4 p-4 img-fluid mx-auto d-block midbarlogo  " src="S-B imges/sanskar_bharti_logo.jpg"
+				<img class="col-sm-4 p-md-4 py-2 px-5  img-fluid mx-auto d-block midbarlogo  " src="S-B imges/sanskar_bharti_logo.jpg"
 					alt="logo" />
 				<div class="col-sm-4 p-4 text-center my-auto ">
 					<h1>Sanskar Bharti</h1>
 					<br>
 					<h3 class="text-muted">Degree College</h3>
 				</div>
-				<img class="col-sm-4 p-4 img-fluid mx-auto d-block midbarlogo " src="S-B imges/sanskar_bharti_logo.jpg"
+				<img class="col-sm-4 p-md-4 py-2 px-5 img-fluid mx-auto d-block midbarlogo " src="S-B imges/sanskar_bharti_logo.jpg"
 					alt="logo" />
 			</div>
 		</div>
 		<nav class="bg__blue navbar navbar-expand-md p-1">
-			<div class="container-fluid justify-content-center">
-					
-						<ul class="navbar-nav p-0 ">
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0">
-								<a class="text-decoration-none text-white" href="Sanskar-Bharti Home Page.html">HOME</a>
-							</li>
+			<button class="navbar-toggler ms-auto bg-white my-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiblenav">
+				<span class="navbar-toggler-icon "></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="collapsiblenav">
+				<ul class="navbar-nav p-0 ">
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0">
+						<a class="text-decoration-none text-white" href="Sanskar-Bharti Home Page.html">HOME</a>
+					</li>
 
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
-								<a class="text-decoration-none text-white  dropdown-toggle" data-bs-toggle="dropdown" href="#">ABOUT THE COLLEGES</a>
-								<ul class="dropdown-menu bg_dark ms-2">
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">VISION AND MISSION</a></li>
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">ABOUT OUR COLLEGE</a></li>
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">ABOUT SOCIETY</a></li>
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">AFFILATION</a></li>
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">ADMINISTRATION</a></li>
-										<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border ">SUB COMMIITTES</a></li>
-								</ul>
-							</li>
-
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
-								<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="#">ADMISSION</a>
-								<ul class="dropdown-menu bg_dark">
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">ONLINE REGISTRATION</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">ONLINE ADMISSION</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">COURSES OFFERED</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">ADMISSION CRITERIA</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">RULES & REGULATION</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">ANTI RAGGING CELL</a></li>
-								</ul>
-							</li>
-
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
-								<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="">ACADEMICS</a>
-								<ul class="dropdown-menu bg_dark ">
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">EXAMINATION</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">DATE SHEET</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">SYLLABUS</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">TIME TABLE</a></li>
-									<li><a href="#" class="text-decoration-none text-white dropdown-item">LIST OF HOLIDAYS </a></li>
-							</ul>
-							</li>
-
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
-								<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="">FACILITIES</a>
-								<ul class="dropdown-menu bg_dark ">
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">INFORMATION TECHNOLOGY CELL</a></li>
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">LIBRARY</a></li>
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">WOMEN CELL</a></li>
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">SPORTS</a></li>
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">CANTEEN</a></li>
-										<li><a href="#" class="text-decoration-none text-white dropdown-item">WIFI</a></li>
-								</ul>
-							</li>
-
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0"><a
-									class="text-decoration-none text-white " href="">GALLERY</a>
-							</li>
-
-							<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0"><a
-									class="text-decoration-none text-white" href="">CONTACT US</a>
-							</li>
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
+						<a class="text-decoration-none text-white  dropdown-toggle" data-bs-toggle="dropdown" href="#">ABOUT THE COLLEGES</a>
+						<ul class="dropdown-menu bg_dark ms-2 text-center">
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">VISION AND MISSION</a></li>
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0 ">ABOUT OUR COLLEGE</a></li>
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ABOUT SOCIETY</a></li>
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">AFFILATION</a></li>
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ADMINISTRATION</a></li>
+								<li class=""><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">SUB COMMIITTES</a></li>
 						</ul>
+					</li>
+
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
+						<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="#">ADMISSION</a>
+						<ul class="dropdown-menu bg_dark">
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ONLINE REGISTRATION</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ONLINE ADMISSION</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">COURSES OFFERED</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ADMISSION CRITERIA</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">RULES & REGULATION</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">ANTI RAGGING CELL</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
+						<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="">ACADEMICS</a>
+						<ul class="dropdown-menu bg_dark ">
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">EXAMINATION</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">DATE SHEET</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">SYLLABUS</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">TIME TABLE</a></li>
+							<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">LIST OF HOLIDAYS </a></li>
+					</ul>
+					</li>
+
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0 dropdown">
+						<a class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown" href="">FACILITIES</a>
+						<ul class="dropdown-menu bg_dark ">
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">INFORMATION TECHNOLOGY CELL</a></li>
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">LIBRARY</a></li>
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">WOMEN CELL</a></li>
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">SPORTS</a></li>
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">CANTEEN</a></li>
+								<li><a href="#" class="text-decoration-none text-white dropdown-item border border-top-0 border-start-0 border-end-0">WIFI</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0"><a
+							class="text-decoration-none text-white " href="">GALLERY</a>
+					</li>
+
+					<li class="nav-item p-2 px-5 text-center border border-white border-top-0 border-bottom-0"><a
+							class="text-decoration-none text-white" href="">CONTACT US</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
-
 	</header>
 	<section class="section1 ">
 		<div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -280,7 +284,7 @@
 			<p class="col-sm-3 text-center p-4 m-0">Admission Open
 				<br>for 2024-2025
 			</p>
-			<p class="col-lg-3 text-center p-4 border border-top-0 border-bottom-0 border-end-0 m-0">
+			<p class="col-sm-3 text-center p-4 border border-top-0 border-bottom-0 border-end-0 m-0">
 				UG : BA, BCOM,BSc(Medical)
 				<br>BSc(Non-Medical)
 			</p>
@@ -293,47 +297,51 @@
 			</p>
 		</div>
 	</section>
-	<section class="container-fluid m-0 pe-5">
-		<div class="section3 row gx-3">
-			<div class="col-sm-7 p-5">
-				<h1 class="py-3">Welcome to Sanskar Bharti Degree College Mahendergarh,
-					Haryana</h1>
-				<p class="py-3">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called
-					as the best degree colleges of haryana.
-					With the mission to propogate quility of education by honing the technical skills of students.
-					Sanskar Bharti aims to produce superior manpower of a tall order to be compared with the world's
-					most professional intellectuals.
-				</p>
-				<p class="py-3"><b>College toppers:</b> The college toppers have been the pride of Sanskar Bharti
-					with their respectful place in the top charts as IGU Haryana toppers.</p>
-				<p class="py-2"><b>Placements for students: </b>Rapid metro, Adecco, CEPTA, EYUG, Mahindra are the few
-					esteemed organization and<b> placement partners</b>
-					absorbing the produce of Sanskar Bharti as it is one of the top degree college in Haryana.
-				</p>
-				<p class="py-2"><b>College News & Events:</b> Various seminars, workshops and guest lectures are
-					regularly conducted to extract the intellectual brain storming in the
-					students and these events are regularly mentioned in the<b> notification</b> to the students.</p>
-				<div>
-					<input type="button" class="btn border rounded-pill bg__red text-white px-5" value="Read More" />
-				</div>
-			</div>
-			<div class=" m-0 border border-muted col-sm-5 my-5 p-0">
-				<h2 class="p-2 m-0 w-100">News & Events</h2>
-				<marquee direction="up">
-					<p class="ps-3 py-3 border">news1</p>
-					<p class="ps-3 py-3 border">news2</p>
-					<p class="ps-3 py-3 border">news3</p>
-					<p class="ps-3 py-3 border">news4</p>
-					<p class="ps-3 py-3 border">news5</p>
-					<p class="ps-3 py-3 border">news6</p>
-				</marquee>
-				<div>
-					<div class="py-2">
-						<input type="button" class="btn border w-100 p-2 bg_red text-white mt-5"
-							value="Click for more news...">
+	<section class="container-fluid m-0 px-4">
+		<div class="section3 row ">
+			<div class="col-sm-7 ">
+				<div class="p-5">
+					<h1 class="py-3">Welcome to Sanskar Bharti Degree College Mahendergarh,
+						Haryana</h1>
+					<p class="py-3">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called
+						as the best degree colleges of haryana.
+						With the mission to propogate quility of education by honing the technical skills of students.
+						Sanskar Bharti aims to produce superior manpower of a tall order to be compared with the world's
+						most professional intellectuals.
+					</p>
+					<p class="py-3"><b>College toppers:</b> The college toppers have been the pride of Sanskar Bharti
+						with their respectful place in the top charts as IGU Haryana toppers.</p>
+					<p class="py-2"><b>Placements for students: </b>Rapid metro, Adecco, CEPTA, EYUG, Mahindra are the few
+						esteemed organization and<b> placement partners</b>
+						absorbing the produce of Sanskar Bharti as it is one of the top degree college in Haryana.
+					</p>
+					<p class="py-2"><b>College News & Events:</b> Various seminars, workshops and guest lectures are
+						regularly conducted to extract the intellectual brain storming in the
+						students and these events are regularly mentioned in the<b> notification</b> to the students.</p>
+					<div>
+						<input type="button" class="btn border rounded-pill bg__red text-white px-5 bg_redbtn" value="Read More" />
 					</div>
 				</div>
 			</div>
+			<div class="col-sm-5 ">
+				<div class=" border border-muted my-5 p-0 ">
+					<h2 class="p-2 m-0 w-100">News & Events</h2>
+					<marquee direction="up">
+						<p class="ps-3 py-3 border">news1</p>
+						<p class="ps-3 py-3 border">news2</p>
+						<p class="ps-3 py-3 border">news3</p>
+						<p class="ps-3 py-3 border">news4</p>
+						<p class="ps-3 py-3 border">news5</p>
+						<p class="ps-3 py-3 border">news6</p>
+					</marquee>
+					<div>
+						<div class="py-2">
+							<input type="button" class="btn border w-100 p-2 bg_red text-white mt-5 bg_redbtn"
+								value="Click for more news...">
+						</div>
+					</div>
+			   </div>
+		   </div>
 		</div>
 	</section>
 	<section class="section4 text-center container-fluid">
@@ -350,7 +358,7 @@
 	<section class="section5 container-fluid m-0">
 		<div class="row ">
 			<div class=" col-sm-4 ">
-				<div class=" px-3 mt-5 ms-5 border border-secondary ">
+				<div class=" px-3 mt-5  border border-secondary ">
 					<h2 class="text_red p-3">DIRECTOR'S MESSAGE</h2>
 					<img src="S-B imges/director2.png" alt="image" class="mx-auto d-block w-100 img-fluid" />
 					<p class="sec5_p p-3">It is my pleasant pleasure and privilege to express my heartiest greeting on the
@@ -359,13 +367,13 @@
 						Haryana Jant - Pali. Education is the basis of progress & development & education of girls is the bench mark
 						of women empowerment , enlightenment and betterment of society. I wish in the long run this institutions will take this so called backward area to the pinnacle of
 						glory and zenith of heights. Keeping the present environment of co-educational institutions and hostels...
-						<input type="button" class="btn bg__red text-white rounded-pill" value=" Read More " />
+						<input type="button" class="btn bg__red text-white rounded-pill bg_redbtn" value=" Read More " />
 					</p>
 				</div>
 			</div>
 
-			<div class="col-sm-8 ">
-				<div class="ms-5 p-3">
+			<div class="col-sm-8 p-2 ">
+				<div class="p-3">
 					<h2 class="text_red py-5 text-center">Courses Offered</h2>
 
 					<div class="row g-5  ">
@@ -564,55 +572,63 @@
 							 <input type="text" id="sub" placeholder=" Enter your Subject "  class="w-100 p-2"/>
 						</div>
 						<div class="m-3 mb-5 ">
-						<input type="submit" value=" Submit " class="btn border border-dark bg__red text-white px-5 rounded-pill py-2 "/>
+						<input type="submit" value=" Submit " class="btn border border-dark bg__red bg_redbtn text-white px-5 rounded-pill py-2 "/>
 						</div>
 					</form>
 				</div>
 			</section>
 	<footer class=" container-fluid  bg__blue m-0">
 		<div class="text-white m-0 row g-3 p-5">
-					<div class="col-sm-3 ">
-					 <h3 class="footerfontsize p-2"><u>QUICK CONTACT</u></h3>
-						<ul>
-							<li class="lsn p-2">8607575748</li>
-							<li class="lsn p-2">Sanskar Bharti Degree College, Pali, Mahendergarh- 123029 HARYANA,INDIA.</li>
-							<li class="lsn p-2">sbdcpali@gmail.com</li>
-							<li class="lsn p-2">
-								<a class="tdn" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a>
-								<a class="tdn" href="https://x.com" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a>
-								<a class="tdn" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a>
-								<a class="tdn" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube text-white"></i></a>
-								<a class="tdn" href="https://www.google.co.in" target="_blank"><i class="fa-brands fa-google text-white"></i></a>
-							
-							</li>
-						</ul>
+					<div class="col-sm-6 col-md-3 ">
+						<div>
+							<h3 class="footerfontsize p-2"><u>QUICK CONTACT</u></h3>
+							<ul>
+								<li class="lsn p-2">8607575748</li>
+								<li class="lsn p-2">Sanskar Bharti Degree College, Pali, Mahendergarh- 123029 HARYANA,INDIA.</li>
+								<li class="lsn p-2">sbdcpali@gmail.com</li>
+								<li class="lsn p-2">
+									<a class="tdn" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a>
+									<a class="tdn" href="https://x.com" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a>
+									<a class="tdn" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a>
+									<a class="tdn" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube text-white"></i></a>
+									<a class="tdn" href="https://www.google.co.in" target="_blank"><i class="fa-brands fa-google text-white"></i></a>
+								
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-sm-3 ">
-					    <h3 class="footerfontsize p-2" ><u>QUICK LINKS</u></h3>
-						<ul>
-							<li class="lsn p-2">Online Admission</li>
-							<li class="lsn p-2">Date Sheet</li>
-							<li class="lsn p-2">Syllabus</li>
-							<li class="lsn p-2">Previous Question Paper</li>
-							<li class="lsn p-2">Photo Gallery</li>
-						</ul>
+					<div class="col-sm-6 col-md-3 ">
+						<div>
+							<h3 class="footerfontsize p-2" ><u>QUICK LINKS</u></h3>
+							<ul>
+								<li class="lsn p-2">Online Admission</li>
+								<li class="lsn p-2">Date Sheet</li>
+								<li class="lsn p-2">Syllabus</li>
+								<li class="lsn p-2">Previous Question Paper</li>
+								<li class="lsn p-2">Photo Gallery</li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-sm-3 ">
-					    <h3 class="footerfontsize p-2"><u>USEFULL LINKS</u></h3>
-						<ul>
-							<li class="lsn p-2">Scholarship Result 2024</li>
-							<li class="lsn p-2">Holidays</li>
-							<li class="lsn p-2">Our Vision</li>
-							<li class="lsn p-2">Registration</li>
-							<li class="lsn p-2">Examination</li>
-							<li class="lsn p-2">Courses Offered</li>
-						</ul>
+					<div class="col-sm-6 col-md-3 ">
+						<div>
+							<h3 class="footerfontsize p-2"><u>USEFULL LINKS</u></h3>
+							<ul>
+								<li class="lsn p-2">Scholarship Result 2024</li>
+								<li class="lsn p-2">Holidays</li>
+								<li class="lsn p-2">Our Vision</li>
+								<li class="lsn p-2">Registration</li>
+								<li class="lsn p-2">Examination</li>
+								<li class="lsn p-2">Courses Offered</li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-sm-3 ">
-					    <h3 class="footerfontsize p-2"><u>ABOUT</u></h3>
-						<p class="footerpfont">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called as 
-						the best degree colleges of haryana for girls. Sanskar Bharti aims to produce superior manpower 
-						of a tall order to be compared with the world's most professional intellectuals.</p>
+					<div class="col-sm-6 col-md-3 ">
+						<div>
+							<h3 class="footerfontsize p-2"><u>ABOUT</u></h3>
+							<p class="footerpfont">Sanskar Bharti has been on a rise ever since its inception in 2014 to be fondly called as 
+							the best degree colleges of haryana for girls. Sanskar Bharti aims to produce superior manpower 
+							of a tall order to be compared with the world's most professional intellectuals.</p>
+					   </div>
 					</div>
 			</div>
 			<div class="bg__red row text-white">
